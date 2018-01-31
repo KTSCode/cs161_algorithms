@@ -1,8 +1,6 @@
 defmodule AlgorithmsTest do
   use ExUnit.Case
   doctest Algorithms
+  doctest Algorithms.Max
 
-  test "greets the world" do
-    assert Algorithms.hello() == :world
-  end
 end

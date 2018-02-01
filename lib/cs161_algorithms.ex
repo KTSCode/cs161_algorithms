@@ -1,18 +1,16 @@
 defmodule Algorithms do
   @moduledoc """
-  Documentation for Algorithms.
+  # CS 161 Algorithms:
+    * **Algorithm:** Rules which give a sequence of operations for solving a problem
+      * Characteristics:
+        * Finite - must  - terminate after a finite number of steps
+        * [link](www.place.com)
+        * *italic*
+        * **Bold**
+        ``` elixir
+          def thing do
+            :return
+          end
+        ```
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Algorithms.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
 end

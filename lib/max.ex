@@ -14,16 +14,17 @@ defmodule Algorithms.Max do
       * Lower bounds for Worst Case: *n* - 1 comparisons
       * Upper bounds for Worst Case: *n* - 1 comparisons
       * Therefore this is an optimal algorithm for worst case comparison performance
+    * Complexity: O(n)
 
   ## Examples
-      iex> Algorithms.Max.max_value([1, 3, 5, 2, 4])
-      5
+    iex> Algorithms.Max.max_value([1, 3, 5, 2, 4])
+    5
 
-      iex> Algorithms.Max.max_value([1, 5, 5, 20, 4])
-      20
+    iex> Algorithms.Max.max_value([1, 5, 5, 20, 4])
+    20
 
-      iex> Algorithms.Max.max_value([])
-      0
+    iex> Algorithms.Max.max_value([])
+    0
 
   """
   @spec max_value([integer]) :: integer

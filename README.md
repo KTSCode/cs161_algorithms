@@ -16,7 +16,7 @@
 
 ### TODO:
   * [x] Add Description
-  * [] Finish Introduction in Algorithms Moduledoc
-  * [] Create Searching Module
-  * [] Create Sorting Module
+  * [ ] Finish Introduction in Algorithms Moduledoc
+  * [ ] Create Searching Module
+  * [ ] Create Sorting Module
 

@@ -29,6 +29,20 @@ defmodule Algorithms do
       * operations are `+, -, *, /`
       * each operations takes 1 unit of time
       * assigments, I/O, branching, and comparisons take no time
+    * **Bitwise Model** - takes account og limited size of a real memory word
+      * variables can have values 0 or 1
+      * each variable take 1 unit of space
+      * operations are ᭴, ∨, ⊕, ¬
+      * Each operation takes 1 unit of time
+      * Assigments, I/O, branching, comparisons take no time
+      * **Comparison Model** - for some problems, comparisons dominate costs
+        * All steps consist of
+          1. halt with defined outup, or
+          2. compare tow quantities and the comparison result determines the next step
+        * Variables can hold any integer
+        * Any mathematical operation can be done in no time
+        * Assignments, I/O, branching take no time
+        * Comparisons take 1 unit of time
 
   """
 end

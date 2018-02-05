@@ -16,6 +16,7 @@
 
 ### TODO:
   * [x] Add Description
+  * [ ] Program Karatsuba Algorithm for Integer Multiplication
   * [ ] Finish Introduction in Algorithms Moduledoc
   * [ ] Create Searching Module
   * [ ] Create Sorting Module

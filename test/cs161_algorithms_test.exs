@@ -1,6 +1,6 @@
 defmodule AlgorithmsTest do
   use ExUnit.Case
   doctest Algorithms
-  doctest Algorithms.Max
-
+  doctest Algorithms.Searches
+  doctest Algorithms.Sorts
 end

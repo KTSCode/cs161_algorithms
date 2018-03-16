@@ -50,40 +50,22 @@ defmodule Algorithms.Searches do
     iex> Algorithms.Searches.change(10)
     4
 
+    iex> Algorithms.Searches.change(100)
+    293
+
   """
   @spec change(integer) :: integer
-  def change(amount), do: half_dollar(amount)
+  def change(amount), do: change(amount, [100, 50, 25, 10, 5, 1])
 
-  defp half_dollar(amount) do
-    if amount >= 50 do
-      quarter(amount) + half_dollar(amount - 50)
+  defp change(amount, [value, 1]), do: div(amount, value) + 1
+
+  defp change(amount, list = [head | tail]) do
+    if amount >= head do
+      change(amount, tail) + change(amount - head, list)
     else
-      quarter(amount)
+      change(amount, tail)
     end
   end
 
-  defp quarter(amount) do
-    if amount >= 25 do
-     dime(amount) + quarter(amount - 25)
-    else
-      dime(amount)
-    end
-  end
-
-  defp dime(amount) do
-    if amount >= 10 do
-     nickel(amount) + dime(amount - 10)
-    else
-      nickel(amount)
-    end
-  end
-
-  defp nickel(amount) do
-    if amount >= 0 do
-      div(amount, 5) + 1
-    else
-      0
-    end
-  end
 
 end
